@@ -1,0 +1,36 @@
+//
+//  AppDelegate.swift
+//  MemeMeApp
+//
+//  Created by Victor Matthijs on 24/04/2018.
+//  Copyright © 2018 Victor Matthijs. All rights reserved.
+//
+
+import UIKit
+
+@UIApplicationMain
+class AppDelegate: UIResponder, UIApplicationDelegate {
+
+    var window: UIWindow?
+    
+    var memes = [Meme]()
+    
+    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
+        // Override point for customization after application launch.
+        return true
+    }
+
+
+}
+
+struct Meme {
+    var topText:String
+    var bottomText:String
+    var originalImage:UIImage
+    var memedImage:UIImage
+}
+
+
+
+
+
